@@ -30,7 +30,7 @@ Un bot Discord qui surveille automatiquement les nouvelles releases de vos repos
 
 ### 1. Clonage du projet
 ```bash
-git clone https://github.com/VOTRE_USERNAME/github-release-monitor.git
+git clone https://github.com/Dasju64/github-release-monitor.git
 cd github-release-monitor
 ```
 
@@ -209,5 +209,6 @@ Si vous rencontrez des problèmes :
 3. Créez une nouvelle issue si nécessaire
 
 ---
+
 
 **⭐ N'hésitez pas à laisser une étoile si ce projet vous est utile !**
