@@ -24,7 +24,7 @@ Un bot Discord qui surveille automatiquement les nouvelles releases de vos repos
 ## 🛠️ Installation et Configuration
 
 ### Prérequis
-- Python 3.7+
+- Python 3.11+
 - Compte GitHub avec token d'accès
 - Serveur Discord avec webhook configuré
 
@@ -55,7 +55,7 @@ GITHUB_TOKEN=ghp_VOTRE_TOKEN_ICI
 
 # Configuration Flask (pour déploiement)
 FLASK_HOST=0.0.0.0
-FLASK_PORT=5000
+FLASK_PORT=10000
 ```
 
 ### 4. Obtenir un token GitHub
@@ -212,3 +212,4 @@ Si vous rencontrez des problèmes :
 
 
 **⭐ N'hésitez pas à laisser une étoile si ce projet vous est utile !**
+
