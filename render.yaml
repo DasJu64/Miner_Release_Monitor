@@ -1,15 +1,22 @@
-services:
+        services:
   - type: web
-    name: flask-discord-bot
+    name: miner-release-monitor
     env: python
+    # Commandes de build et démarrage - COMPATIBLES avec votre code
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python main.py"
+    # Variables d'environnement - EXACTEMENT comme dans votre README
     envVars:
+      # Secrets (à configurer dans l'interface Render)
       - key: DISCORD_WEBHOOK
         sync: false
       - key: GITHUB_TOKEN
         sync: false
+      # Configuration Flask - PORT 10000 pour Render (pas 5000 comme en local)
       - key: FLASK_HOST
         value: 0.0.0.0
       - key: FLASK_PORT
         value: 10000
+      # Configuration pour de meilleurs logs
+      - key: PYTHONUNBUFFERED
+        value: 1
