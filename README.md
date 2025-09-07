@@ -78,7 +78,7 @@ FLASK_PORT=10000
 python main.py
 ```
 
-Le serveur démarre sur `http://localhost:5000`
+Le serveur démarre sur `http://localhost:10000`
 
 ### Endpoints disponibles
 - **GET /** - Page d'accueil
@@ -87,7 +87,7 @@ Le serveur démarre sur `http://localhost:5000`
 
 ### Exemple de vérification manuelle
 ```bash
-curl http://localhost:5000/check
+curl http://localhost:10000/check
 ```
 
 Réponse :
@@ -212,4 +212,5 @@ Si vous rencontrez des problèmes :
 
 
 **⭐ N'hésitez pas à laisser une étoile si ce projet vous est utile !**
+
 
