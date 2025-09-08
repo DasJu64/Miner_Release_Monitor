@@ -127,7 +127,7 @@ def check_releases():
             release_url = release["url"]
             
             if state.get(name, {}).get("release_id") != release_id:
-                message = f"🔢 Nouvelle release pour **{name}**: {release_url}"
+                message = f"📢 Nouvelle release pour **{name}**: {release_url}"
                 logger.info(message)
                 send_to_discord(message)
                 state[name] = {"release_id": release_id}
@@ -176,4 +176,5 @@ if __name__ == "__main__":
         app.run(host=host, port=port, debug=False)
     except (KeyboardInterrupt, SystemExit):
         logger.info("Arrêt du serveur...")
+
         scheduler.shutdown()
